@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="/ticketing-home.css">
+    <link rel="stylesheet" href="/ticketresponsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+      <div class="d-flex flex-row align-items-center justify-content-between nCont">
+        <div class="nav-links d-flex gap-3">
+          <i class="bi bi-house-fill" id="Home" style="color: rgb(0, 0, 0);" ></i>
+          <i class="bi bi-folder-plus jo" id="folder" style="color: rgb(0, 0, 0);" ></i>
+          <i class="bi bi-folder-check hide" id="folder2" style="color: rgb(0, 0, 0);"></i>
+        </div>
+
+        <p class="logo">Ticketing App</p>
+
+        <div class="userlog" id="userlog">
+          <i class="bi bi-person-circle">
+            <span id="user" class= "user">....</span>
+          </i>
+          <div class="logout-C" id="logout-C">
+          <button type="button" class="btn btn-danger w-5 h-5" id="Logout">Log Out</button>
+          </div>
+        </div>
+        
+      </div>
+        <!-- <div class="nav-links">
+        </div>
+        <div class="logo"> Ticketing App </div> -->
+      </nav>
+    <section class="ticket-wrap">
+        <div class="ticket-wrapper">
+            <div class="ticket-container">
+                <div>
+                    <h1>Hardware Problem</h1>
+                </div>
+                <div id="hardware_problem" class="ticket-content">
+                  <div class="card" style="width: 23rem; height: 5cm;">
+                    <div class="card-body container">
+                      <div class="option">
+                                <ul class="cont">
+                                    <li><i class="bi bi-watch"></i></li>
+                                    <li><i class="bi bi-watch"></i></li>
+                                    <li><i class="bi bi-watch"></i></li>
+                                    <li><i class="bi bi-watch"></i></li>
+                                    <li><i class="bi bi-watch"></i></li>
+                                </ul>
+                                <ul class="cont2">
+                                    <li><i class="bi bi-eye" data-bs-toggle="modal" data-bs-target="#myModal"></i></li>
+                                    <li><i class="bi bi-pencil-square" style="color:gold;" onclick="del()"></i></li>
+                                   
+                                </ul>
+                            </div>
+                          <h5 class="card-title">My pc has damaged</h5>
+                          <div class="line"></div>
+                          <p class="card-text">i'm currently facing an issue as my laptop has been changed. unfortunately,this</p>
+                          <br>
+                          <h6 class="card-text">12/12/2023. 02:34 AM</h6>
+                          <div class="ipt">
+                            <input type="range" class="form-range w-50" id="customRange1">
+                            <label>0%</label>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="ticket-container">
+                <div>
+                    <h1>Software Problem</h1>
+                </div>
+                <div id="software_problem" class="ticket-content">
+                  <div class="card" style="width: 23rem; height: 5cm;">
+                    <div class="card-body container">
+                        <div class="option">
+                            <ul class="cont">
+                                <li><i class="bi bi-watch"></i></li>
+                                <li><i class="bi bi-watch"></i></li>
+                                <li><i class="bi bi-watch"></i></li>
+                                <li><i class="bi bi-watch"></i></li>
+                                <li><i class="bi bi-watch"></i></li>
+                            </ul>
+                            <ul class="cont2">
+                                <li><i class="bi bi-eye" data-bs-toggle="modal" data-bs-target="#myModal"></i></li>
+                                <li><i class="bi bi-pencil-square" style="color:gold;"></i></li>
+                                <li><i class="bi bi-x-lg" style="color: brown;"></i></li>
+                            </ul>
+                        </div>
+                      <h5 class="card-title">My pc has damaged</h5>
+                      <div class="line"></div>
+                      <p class="card-text">i'm currently facing an issue as my laptop has been changed. unfortunately,this</p>
+                      <br>
+                      <h6 class="card-text">12/12/2023. 02:34 AM</h6>
+                      <div class="ipt">
+                        <input type="range" class="form-range w-50" id="customRange1" value="" >
+                        <label>0%</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <div class="ticket-container">
+            <div>
+                <h1>project Problem</h1>
+            </div>
+              <div id="project_problem" class="ticket-content">
+                <div class="card" style="width: 23rem; height: 5cm;">
+                  <div class="card-body container">
+                      <div class="option">
+                          <ul class="cont">
+                              <li><i class="bi bi-watch"></i></li>
+                              <li><i class="bi bi-watch"></i></li>
+                              <li><i class="bi bi-watch"></i></li>
+                              <li><i class="bi bi-watch"></i></li>
+                              <li><i class="bi bi-watch"></i></li>
+                          </ul>
+                          <ul class="cont2">
+                              <li><i class="bi bi-eye" data-bs-toggle="modal" data-bs-target="#myModal" data-ticket-id=""></i></li>
+                              <li><i class="bi bi-pencil-square" style="color:gold;"></i></li>
+                              <li><i class="bi bi-x-lg" style="color: brown;" data-bs-toggle="modal" data-bs-target="#tog"></i></li>
+                          </ul>
+                      </div>
+                    <h5 class="card-title">My pc has damaged</h5>
+                    <div class="line"></div>
+                    <p class="card-text">i'm currently facing an issue as my laptop has been changed. unfortunately,this</p>
+                    <br>
+                    <h6 class="card-text">12/12/2023. 02:34 AM</h6>
+                    <div class="ipt">
+                      <div>
+                        <input type="range" class="form-range w-50" id="customRange1">
+                        <label>0%</label>
+                      </div>
+                      <div>
+                        <span class="Done">Done</span>
+                        <span class="Started">Started</span>
+                        <span class="Not-Done"> Not-started</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal" tabindex="-1" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="ticketDetailsModalLabel">Ticket Details</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"  id="ticketDetailsBody">
+
+                </div>
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" tabindex="-1" id="tog">
+            <div class="modal-dialog">
+              <div class="modal-content p-4 text-bg-light w-5" >
+                  <h5 class="modal-title"> Are you sure you want to delete this ticket</h5>
+                <div class="modal-body">
+                  <p>Note: This item will be permanently deleted</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+                  <button type="button" class="btn btn-success" id="yes-btn" data-bs-dismiss="modal">yes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="editT">
+            <div class="editT-container">
+              <div class="edtT-content">
+                <form class="tick-form" id="editT-form">
+                  <div class="edict">
+                    <div></div>
+                    <h1>Edit Ticket</h1>
+                    <span class="close cursor" id="closeM" >&times;</span>
+                  </div>
+                  <label>Title</label>
+                  <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="title" >
+                </div>
+                  <br>
+                  <label>Description</label>
+                  <div class="input-group w-50%">
+                    <textarea class="form-control" aria-label="With textarea" id="description"></textarea>
+                  </div>
+                  <br>
+                  <label >category</label>
+                  <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                      <option selected>Choose...</option>
+                      <option value="hardware">Hardware</option>
+                      <option value="software">Software</option>
+                      <option value="project">project</option>
+                      
+                    </select>
+                  </div>
+                  <br>
+                  <label> Priority </label>
+                  <div class="input-g">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"  value="3">
+                      <label class="form-check-label" for="inlineRadio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4">
+                      <label class="form-check-label" for="inlineRadio3">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5">
+                      <label class="form-check-label" for="inlineRadio3">5</label>
+                    </div>
+                  </div>
+                  <br>
+                  <label> progress </label>
+                  <div class="ipt">
+                    <input type="range" class="form-range w-5 range" id="editF-Progress" min="0" max="100" value="0">
+                    <label id="progress">0%</label>
+                  </div>
+                  <br>
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">Submit Ticket</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="ticketreg hide"></div>
+          <div class="tickreg">
+            <div class="ticketreg-container cont">
+              <div class="ticketreg-content">
+                <form class="tick-form" id="tick-form">
+                  <div class="ct">
+                    <h1>Create ticket</h1>
+                  </div>
+                  <label>Title</label>
+                  <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="title" required >
+                </div>
+                  <br>
+                  <label>Description</label>
+                  <div class="input-group w-50%">
+                    <textarea class="form-control" aria-label="With textarea" id="description"  required></textarea>
+                  </div>
+                  <br>
+                  <label >category</label>
+                  <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02" required>
+                      <option selected>Choose...</option>
+                      <option value="hardware">Hardware</option>
+                      <option value="software">Software</option>
+                      <option value="project">project</option>
+                    </select>
+                  </div>
+                  <br>
+                  <label> Priority </label>
+                  <div class="input-g">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"  required>
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"  required>
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"  value="3"  required>
+                      <label class="form-check-label" for="inlineRadio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4"  required>
+                      <label class="form-check-label" for="inlineRadio3">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5"  required>
+                      <label class="form-check-label" for="inlineRadio3">5</label>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">Create Ticket</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- <script src="/ticketing page.js"></script> -->
+    <script src="tickets.js"></script>
+  </body>
+</html>

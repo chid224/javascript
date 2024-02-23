@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Montserrat", sans-serif;
+}
+nav{
+    background: linear-gradient(rgb(247, 247, 247) 100%,rgba(144, 144, 144, 0.301));
+    box-shadow: 0px 5px 50px black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 360px;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    z-index: 5;
+}
+.nCont{
+    gap: 22.5rem !important;
+}
+.ticket-wrap{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 157, 255, 0.951)10%,rgb(39, 69, 152));
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 6;
+}
+.ticket-content{
+    display: flex;
+    gap: 2.5rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    animation: fade-down 0.5s;
+}
+.ticket-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.ticket-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 125px 100px ;
+}
+.logo{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px palevioletred;
+    text-transform:uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+.ticket-container h1{
+    color: rgb(0, 0, 0);
+    font-size: 18.5px;
+    font-weight: 700;
+}
+.ticket-container label{
+    color: #000000;
+}
+.card{
+    background-color: #ffffff !important;
+    height: fit-content !important;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.clo{
+    display: flex;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+}
+.cont{
+    padding-left: 0;
+}
+.cont2{
+    display: flex;
+    gap: 10px;
+}
+.ipt{
+    display: flex;
+    gap: 37px;
+    flex-grow: 34;
+}
+.ipt div{
+    display: flex;
+}
+.line{ 
+    height: 2px;
+    background-color:rgba(0, 0, 0, 0.774);
+}
+.ipt .w-50 {
+    width: 100% !important;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+.ticketreg{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.804);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+p{
+    margin-bottom: 0 !important;
+}
+.tickreg{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    position: relative;
+}
+.editT{
+    background: linear-gradient(rgb(37, 50, 86) 10%,rgb(0, 157, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    position: fixed;
+    z-index: 19;
+    right: 100%;
+}
+.close {
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .close:hover,
+  .close:focus {
+    text-shadow: 0px 0px 10px palevioletred;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.e-ani{
+    right: 0%;
+    transition: ease-in right 0.5s;
+}
+.e-aniC{
+    right: 100%;
+    transition: ease-out right 0.5s;
+}
+#myModal{
+    margin-top: 10rem !important;
+    animation: fade-down 1s;
+}
+#tog{
+    margin-top: 10rem !important;
+    animation: fade-down 1s;
+    
+}
+.ticketreg-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.907);
+    border: solid ;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px palevioletred;
+    height: fit-content;
+    position: fixed;
+    bottom: 100%;
+} 
+.editT-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+    width: 30%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px palevioletred;
+    border-radius: 30px;
+    height: fit-content;
+}
+.edict{
+    color: black;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.edict h1{
+    font-weight: bolder;
+    font-size: 27px;
+}
+.ani{
+    transition: ease-in-out all 2s;
+    transform: translateY(125%);
+}
+.ani2{
+    transition: ease-out all 1s;
+    transform: translateY(-100%);
+}
+.tick-form{
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.tick-form label{
+    color: black;
+    font-weight: bold;
+}
+label{
+    color: rgb(255, 255, 255);
+}
+.ct h1{
+    font-weight: bolder;
+    font-size: 27px;
+}
+.ct{
+    color: black;
+    margin-bottom: 5px;
+}
+.hide{
+    display: none;
+}
+.nav-links i{
+    font-size: 20px;
+}
+.userlog{
+    color: #000000;
+    font-size: 30px;
+    height: 45px;
+}
+.userlog:hover{
+    cursor: pointer;
+}
+ .cont2 I:hover{
+    cursor:pointer;
+    text-shadow: 0px 0px 5px palevioletred;
+}
+.modal-footer{
+    display: flex !important;
+    justify-content: flex-start!important;
+    align-items: center !important ;
+    padding-left: 0 !important;
+}
+.nav-links I:hover{
+    cursor:pointer;
+    text-shadow: 0px -2px 5px palevioletred;
+}
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fade-up {
+    0%{
+        opacity: 1;
+        transform: translateY(0px) scale(0.9);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-30px) scale(1);
+    }
+}
+
+
+
+.bi-x-lg:hover{
+    color: aqua ;
+    cursor: pointer;
+}
+.bi-eye{
+    color: rgb(30, 92, 200);
+}
+.js-tag-watch{
+    color:  rgb(255, 0, 85);
+}
+.Done{
+    background-color: rgb(18, 144, 18);
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 5px;
+    color: #ffffff;
+}
+.Started{
+    background-color: rgb(0, 85, 255);
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 5px;
+    color: #ffffff;
+}
+.Not-Done{
+    background-color: rgb(241, 55, 55);
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 5px;
+    color: #ffffff;
+}
+label{
+    font-weight: 700;
+}
+.logout-C{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 206px;
+    height: 268px;
+    background-image: url(Untitled\ design.svg);
+    background-size: cover;
+    z-index: 0;
+    margin-left: -58px;
+    opacity: 0;
+    margin-top: -69px;
+}
+.hidden{
+    opacity: 0;
+    animation: fade-up 0.5s;
+}
+.visible{
+    opacity: 1;
+    animation: fade-down 0.5s;
+}
+.user{
+    font-size: 15px;
+    font-weight: 600;
+}

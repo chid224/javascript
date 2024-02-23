@@ -1,0 +1,19 @@
+@media (max-width: 1200px)
+{
+.nCont{
+ gap: 12.5rem !important;
+}
+}
+
+@media (max-width: 900px)
+{
+    .nCont{
+        gap: 8.5rem !important;
+    }
+}
+@media (max-width: 700px)
+{
+    .nCont{
+        gap: 2.5rem !important;
+    }
+}
